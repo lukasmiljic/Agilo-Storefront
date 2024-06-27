@@ -1,5 +1,5 @@
 import products from "../../data/products";
-import ProductCard from "./ProductsCard";
+import ProductCard from "./ProductCard";
 
 const ProductsGrid = () => {
   return (
