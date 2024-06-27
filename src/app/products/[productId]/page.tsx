@@ -1,5 +1,6 @@
 "use client";
 
+import ProductInfo from "@/components/products/ProductInfo/ProductInfo";
 import products from "@/data/products";
 import { useParams } from "next/navigation";
 
@@ -12,13 +13,13 @@ const ProductPage = () => {
   console.log(params.productId);
 
   return (
-    <>
+    <div className="flex flex-col gap-y-8 w-full md:flex-row md:gap-8 max-w-7xl mx-auto">
       {product ? (
-        <p>{product.title}</p>
+        <ProductInfo  {...product} />
       ): (
         <p>Product not found</p>
       )}
-    </>
+    </div>
   );
 };
 
