@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useRouter } from "next/navigation";
 
@@ -15,7 +15,7 @@ const ProductCard = ({
 
   return (
     <div
-      className="relative flex aspect-square cursor-pointer bg-slate-100 transition-transform hover:-translate-y-1"
+      className="bg-lightbg relative flex aspect-square cursor-pointer transition-transform hover:-translate-y-1"
       onClick={() => router.push(`/products/${id}`)}
     >
       <div className="flex h-full w-full items-center justify-center">
