@@ -10,7 +10,6 @@ const ProductPage = () => {
   const product = products.find(
     (product) => product.id === parseInt(params.productId),
   );
-  console.log(params.productId);
 
   return (
     <div className="flex flex-col gap-y-8 w-full md:flex-row md:gap-8 max-w-7xl mx-auto">
