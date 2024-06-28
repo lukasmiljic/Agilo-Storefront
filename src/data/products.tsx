@@ -8,6 +8,7 @@ const products = [
     stock: 10,
     colors: ["black", "blue"],
     details: { title: "Materials", description: "Cotton 90% Polyester 10%" },
+    category: "bags",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const products = [
     stock: 10,
     colors: ["black", "blue"],
     details: { title: "Materials", description: "Cotton 90% Polyester 10%" },
+    category: "accessories",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const products = [
     stock: 10,
     colors: ["black", "blue"],
     details: { title: "Materials", description: "Cotton 90% Polyester 10%" },
+    category: "accessories",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const products = [
     stock: 10,
     colors: ["black", "blue"],
     details: { title: "Materials", description: "Cotton 90% Polyester 10%" },
+    category: "accessories",
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ const products = [
     stock: 10,
     colors: ["black", "blue"],
     details: { title: "Materials", description: "Cotton 90% Polyester 10%" },
+    category: "clothing",
   },
   {
     id: 6,
@@ -58,6 +63,7 @@ const products = [
     stock: 10,
     colors: ["black", "blue"],
     details: { title: "Materials", description: "Cotton 90% Polyester 10%" },
+    category: "clothing",
   },
   {
     id: 7,
@@ -68,6 +74,7 @@ const products = [
     stock: 10,
     colors: ["black", "blue"],
     details: { title: "Materials", description: "Cotton 90% Polyester 10%" },
+    category: "accessories",
   },
   {
     id: 8,
@@ -78,6 +85,7 @@ const products = [
     stock: 10,
     colors: ["black", "blue"],
     details: { title: "Materials", description: "Cotton 90% Polyester 10%" },
+    category: "clothing",
   },
   {
     id: 9,
@@ -88,6 +96,7 @@ const products = [
     stock: 10,
     colors: ["black", "blue"],
     details: { title: "Materials", description: "Cotton 90% Polyester 10%" },
+    category: "bags",
   },
   {
     id: 10,
@@ -98,7 +107,16 @@ const products = [
     stock: 10,
     colors: ["black", "white"],
     details: { title: "Materials", description: "Aluminum" },
+    category: "accessories",
   },
+];
+
+export const categories = [
+  ...new Set(
+    products
+      .filter((product) => product.category)
+      .map((product) => product.category),
+  ),
 ];
 
 export default products;
